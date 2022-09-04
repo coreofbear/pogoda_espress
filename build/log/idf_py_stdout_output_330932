@@ -1,0 +1,906 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time 20:14:08[0m
+[0;32mI (30) boot: chip revision: V003[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (236) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (240) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (247) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (248) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) cpu_start: Pro cpu up.[0m
+[0;32mI (274) cpu_start: Pro cpu start user code[0m
+[0;32mI (274) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (274) cpu_start: Application information:[0m
+[0;32mI (277) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (282) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (288) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (294) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (300) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (307) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (314) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (320) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (327) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (338) spi_flash: flash io: dio[0m
+[0;33mW (342) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (356) cpu_start: Starting scheduler.[0m
+[0;32mI (365) pp: pp rom version: 9387209[0m
+[0;32mI (365) net80211: net80211 rom version: 9387209[0m
+I (375) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (375) system_api: Base MAC address is not set[0m
+[0;32mI (385) system_api: read default base MAC address from EFUSE[0m
+I (395) wifi:wifi firmware version: 6eba5b5
+I (395) wifi:wifi certification version: v7.0
+I (395) wifi:config NVS flash: enabled
+I (395) wifi:config nano formating: disabled
+I (405) wifi:Init data frame dynamic rx buffer num: 32
+I (405) wifi:Init management frame dynamic rx buffer num: 32
+I (415) wifi:Init management short buffer num: 32
+I (415) wifi:Init dynamic tx buffer num: 32
+I (425) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 1600
+I (425) wifi:Init static rx buffer num: 10
+I (435) wifi:Init dynamic rx buffer num: 32
+[0;32mI (435) wifi_init: rx ba win: 6[0m
+[0;32mI (445) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (445) wifi_init: tcp mbox: 6[0m
+[0;32mI (455) wifi_init: tcp tx win: 5744[0m
+[0;32mI (455) wifi_init: tcp rx win: 5744[0m
+[0;32mI (465) wifi_init: tcp mss: 1440[0m
+[0;32mI (465) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (465) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (505) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (515) wifi:enable tsf
+I (545) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (545) wifi:state: init -> auth (b0)
+I (545) wifi:state: auth -> init (1c0)
+I (545) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3005) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3005) wifi:state: init -> auth (b0)
+I (3005) wifi:state: auth -> assoc (0)
+I (3015) wifi:state: assoc -> run (10)
+I (3055) wifi:connected with coreofbear, aid = 19, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3055) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (3055) wifi:pm start, type: 1
+
+I (3055) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+I (3105) wifi:BcnInt:102400, DTIM:2
+W (3105) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+[0;32mI (3865) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5515) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5515) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (590) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (590) wifi:state: init -> auth (b0)
+I (600) wifi:state: auth -> init (1c0)
+I (600) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3050) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3050) wifi:state: init -> auth (b0)
+I (3060) wifi:state: auth -> assoc (0)
+I (3070) wifi:state: assoc -> run (10)
+I (3080) wifi:connected with coreofbear, aid = 20, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3080) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (3090) wifi:pm start, type: 1
+
+I (3090) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3110) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3150) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5520) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5520) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (520) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (520) wifi:enable tsf
+I (540) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (540) wifi:state: init -> auth (b0)
+I (550) wifi:state: auth -> init (1c0)
+I (550) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (2990) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (2990) wifi:state: init -> auth (b0)
+I (3000) wifi:state: auth -> assoc (0)
+I (3010) wifi:state: assoc -> run (10)
+I (3030) wifi:connected with coreofbear, aid = 21, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3030) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (3030) wifi:pm start, type: 1
+
+I (3030) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3050) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3100) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5520) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5520) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (580) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (580) wifi:state: init -> auth (b0)
+I (590) wifi:state: auth -> init (1c0)
+I (590) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3040) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3040) wifi:state: init -> auth (b0)
+I (3050) wifi:state: auth -> assoc (0)
+I (3060) wifi:state: assoc -> run (10)
+I (3080) wifi:connected with coreofbear, aid = 22, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3080) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (3080) wifi:pm start, type: 1
+
+I (3090) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3100) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3140) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5520) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5520) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (530) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (530) wifi:state: init -> auth (b0)
+I (530) wifi:state: auth -> init (1c0)
+I (530) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (2980) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (2980) wifi:state: init -> auth (b0)
+I (2990) wifi:state: auth -> assoc (0)
+I (3000) wifi:state: assoc -> run (10)
+I (3020) wifi:connected with coreofbear, aid = 23, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3020) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (3020) wifi:pm start, type: 1
+
+I (3030) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3050) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3080) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5520) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5520) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (570) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (570) wifi:state: init -> auth (b0)
+I (580) wifi:state: auth -> init (1c0)
+I (580) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3030) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3030) wifi:state: init -> auth (b0)
+I (3030) wifi:state: auth -> assoc (0)
+I (3050) wifi:state: assoc -> run (10)
+I (3080) wifi:connected with coreofbear, aid = 24, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3080) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (3080) wifi:pm start, type: 1
+
+I (3080) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3100) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3130) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5520) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5520) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (520) wifi:enable tsf
+I (620) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (620) wifi:state: init -> auth (b0)
+I (620) wifi:state: auth -> init (1c0)
+I (620) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3070) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3070) wifi:state: init -> auth (b0)
+I (3080) wifi:state: auth -> assoc (0)
+I (3090) wifi:state: assoc -> run (10)
+I (3120) wifi:connected with coreofbear, aid = 25, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3120) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (3120) wifi:pm start, type: 1
+
+I (3130) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3150) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3170) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (5520) esp-tls: couldn't get hostname for :: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5520) esp-tls: Failed to open new connection[0m
+Guru Meditation Error: Core  0 panic'ed (Instruction access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x00000000  RA      : 0x42014412  SP      : 0x3fca77b0  GP      : 0x3fc90600  
+TP      : 0x3fc87024  T0      : 0x4005890e  T1      : 0x50000000  T2      : 0xffffffff  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x3fca7e48  A1      : 0x3c0a5618  
+A2      : 0x0000008b  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x3fca7e48  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000001  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+0x00000000 in ?? ()
+#0  0x00000000 in ?? ()
+#1  0x42014412 in esp_tls_conn_write (tls=tls@entry=0x3fca7e48, data=data@entry=0x3c0a5618, datalen=datalen@entry=139) at /home/mikhail/esp/esp-idf/components/esp-tls/esp_tls.c:104
+#2  0x42007cba in weather_get_task (ptr_params=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:211
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 948886c72bc20c6c
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21708h (136968) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00031730 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034584 vaddr=40380000 size=0ba94h ( 47764) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98dc0h (626112) map[0m
+[0;32mI (241) esp_image: segment 4: paddr=000d8de8 vaddr=4038ba94 size=04250h ( 16976) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000dd040 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (287) cpu_start: App version:      0557708-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 19:21:16[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  948886c72bc20c6c...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (319) heap_init: At 3FC96EE0 len 00045830 (278 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fba8, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (560) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (560) wifi:state: init -> auth (b0)
+I (560) wifi:state: auth -> init (1c0)
+I (560) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1

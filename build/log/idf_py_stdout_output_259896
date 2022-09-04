@@ -1,0 +1,188 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file /home/mikhail/projects/roadmap/pogoda_espress/sdkconfig
+-- App "pogoda_espress" version: 0557708-dirty
+-- Adding linker script /home/mikhail/projects/roadmap/pogoda_espress/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_serial_slave_link esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport tinyusb ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/mikhail/esp/esp-idf/components/app_trace /home/mikhail/esp/esp-idf/components/app_update /home/mikhail/esp/esp-idf/components/bootloader /home/mikhail/esp/esp-idf/components/bootloader_support /home/mikhail/esp/esp-idf/components/bt /home/mikhail/esp/esp-idf/components/cmock /home/mikhail/esp/esp-idf/components/console /home/mikhail/esp/esp-idf/components/cxx /home/mikhail/esp/esp-idf/components/driver /home/mikhail/esp/esp-idf/components/efuse /home/mikhail/esp/esp-idf/components/esp-tls /home/mikhail/esp/esp-idf/components/esp_adc /home/mikhail/esp/esp-idf/components/esp_app_format /home/mikhail/esp/esp-idf/components/esp_common /home/mikhail/esp/esp-idf/components/esp_eth /home/mikhail/esp/esp-idf/components/esp_event /home/mikhail/esp/esp-idf/components/esp_gdbstub /home/mikhail/esp/esp-idf/components/esp_hid /home/mikhail/esp/esp-idf/components/esp_http_client /home/mikhail/esp/esp-idf/components/esp_http_server /home/mikhail/esp/esp-idf/components/esp_https_ota /home/mikhail/esp/esp-idf/components/esp_https_server /home/mikhail/esp/esp-idf/components/esp_hw_support /home/mikhail/esp/esp-idf/components/esp_lcd /home/mikhail/esp/esp-idf/components/esp_local_ctrl /home/mikhail/esp/esp-idf/components/esp_netif /home/mikhail/esp/esp-idf/components/esp_phy /home/mikhail/esp/esp-idf/components/esp_pm /home/mikhail/esp/esp-idf/components/esp_psram /home/mikhail/esp/esp-idf/components/esp_ringbuf /home/mikhail/esp/esp-idf/components/esp_rom /home/mikhail/esp/esp-idf/components/esp_serial_slave_link /home/mikhail/esp/esp-idf/components/esp_system /home/mikhail/esp/esp-idf/components/esp_timer /home/mikhail/esp/esp-idf/components/esp_wifi /home/mikhail/esp/esp-idf/components/espcoredump /home/mikhail/esp/esp-idf/components/esptool_py /home/mikhail/esp/esp-idf/components/fatfs /home/mikhail/esp/esp-idf/components/freertos /home/mikhail/esp/esp-idf/components/hal /home/mikhail/esp/esp-idf/components/heap /home/mikhail/esp/esp-idf/components/http_parser /home/mikhail/esp/esp-idf/components/idf_test /home/mikhail/esp/esp-idf/components/ieee802154 /home/mikhail/esp/esp-idf/components/json /home/mikhail/esp/esp-idf/components/log /home/mikhail/esp/esp-idf/components/lwip /home/mikhail/projects/roadmap/pogoda_espress/main /home/mikhail/esp/esp-idf/components/mbedtls /home/mikhail/esp/esp-idf/components/mqtt /home/mikhail/esp/esp-idf/components/newlib /home/mikhail/esp/esp-idf/components/nvs_flash /home/mikhail/esp/esp-idf/components/openthread /home/mikhail/esp/esp-idf/components/partition_table /home/mikhail/esp/esp-idf/components/protobuf-c /home/mikhail/esp/esp-idf/components/protocomm /home/mikhail/esp/esp-idf/components/pthread /home/mikhail/esp/esp-idf/components/riscv /home/mikhail/esp/esp-idf/components/sdmmc /home/mikhail/esp/esp-idf/components/soc /home/mikhail/esp/esp-idf/components/spi_flash /home/mikhail/esp/esp-idf/components/spiffs /home/mikhail/esp/esp-idf/components/tcp_transport /home/mikhail/esp/esp-idf/components/tinyusb /home/mikhail/esp/esp-idf/components/ulp /home/mikhail/esp/esp-idf/components/unity /home/mikhail/esp/esp-idf/components/usb /home/mikhail/esp/esp-idf/components/vfs /home/mikhail/esp/esp-idf/components/wear_levelling /home/mikhail/esp/esp-idf/components/wifi_provisioning /home/mikhail/esp/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mikhail/projects/roadmap/pogoda_espress/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/mikhail/projects/roadmap/pogoda_espress/build/bootloader/esp-idf/esptool_py && /home/mikhail/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/mikhail/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/mikhail/projects/roadmap/pogoda_espress/build/bootloader/bootloader.bin
+Bootloader binary size 0x4e60 bytes. 0x31a0 bytes (39%) free.
+[2/9] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/9] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/pogoda_espress.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/pogoda_espress.c.obj 
+/home/mikhail/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DUNITY_INCLUDE_CONFIG_H -I/home/mikhail/projects/roadmap/pogoda_espress/build/config -I/home/mikhail/esp/esp-idf/components/newlib/platform_include -I/home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/mikhail/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/mikhail/esp/esp-idf/components/freertos/esp_additions/include -I/home/mikhail/esp/esp-idf/components/esp_hw_support/include -I/home/mikhail/esp/esp-idf/components/esp_hw_support/include/soc -I/home/mikhail/esp/esp-idf/components/esp_hw_support/include/soc/esp32c3 -I/home/mikhail/esp/esp-idf/components/esp_hw_support/port/esp32c3/. -I/home/mikhail/esp/esp-idf/components/esp_hw_support/port/esp32c3/private_include -I/home/mikhail/esp/esp-idf/components/heap/include -I/home/mikhail/esp/esp-idf/components/log/include -I/home/mikhail/esp/esp-idf/components/soc/include -I/home/mikhail/esp/esp-idf/components/soc/esp32c3/. -I/home/mikhail/esp/esp-idf/components/soc/esp32c3/include -I/home/mikhail/esp/esp-idf/components/hal/esp32c3/include -I/home/mikhail/esp/esp-idf/components/hal/include -I/home/mikhail/esp/esp-idf/components/hal/platform_port/include -I/home/mikhail/esp/esp-idf/components/esp_rom/include -I/home/mikhail/esp/esp-idf/components/esp_rom/include/esp32c3 -I/home/mikhail/esp/esp-idf/components/esp_rom/esp32c3 -I/home/mikhail/esp/esp-idf/components/esp_common/include -I/home/mikhail/esp/esp-idf/components/esp_system/include -I/home/mikhail/esp/esp-idf/components/esp_system/port/soc -I/home/mikhail/esp/esp-idf/components/esp_system/port/include/riscv -I/home/mikhail/esp/esp-idf/components/esp_system/port/include/private -I/home/mikhail/esp/esp-idf/components/riscv/include -I/home/mikhail/esp/esp-idf/components/lwip/include -I/home/mikhail/esp/esp-idf/components/lwip/include/apps -I/home/mikhail/esp/esp-idf/components/lwip/include/apps/sntp -I/home/mikhail/esp/esp-idf/components/lwip/lwip/src/include -I/home/mikhail/esp/esp-idf/components/lwip/port/esp32/include -I/home/mikhail/esp/esp-idf/components/lwip/port/esp32/include/arch -I/home/mikhail/esp/esp-idf/components/esp_ringbuf/include -I/home/mikhail/esp/esp-idf/components/efuse/include -I/home/mikhail/esp/esp-idf/components/efuse/esp32c3/include -I/home/mikhail/esp/esp-idf/components/driver/include -I/home/mikhail/esp/esp-idf/components/driver/deprecated -I/home/mikhail/esp/esp-idf/components/esp_pm/include -I/home/mikhail/esp/esp-idf/components/mbedtls/port/include -I/home/mikhail/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/mikhail/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/mikhail/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/mikhail/esp/esp-idf/components/esp_app_format/include -I/home/mikhail/esp/esp-idf/components/bootloader_support/include -I/home/mikhail/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/mikhail/esp/esp-idf/components/app_update/include -I/home/mikhail/esp/esp-idf/components/spi_flash/include -I/home/mikhail/esp/esp-idf/components/pthread/include -I/home/mikhail/esp/esp-idf/components/esp_timer/include -I/home/mikhail/esp/esp-idf/components/app_trace/include -I/home/mikhail/esp/esp-idf/components/esp_event/include -I/home/mikhail/esp/esp-idf/components/nvs_flash/include -I/home/mikhail/esp/esp-idf/components/esp_phy/include -I/home/mikhail/esp/esp-idf/components/esp_phy/esp32c3/include -I/home/mikhail/esp/esp-idf/components/vfs/include -I/home/mikhail/esp/esp-idf/components/esp_netif/include -I/home/mikhail/esp/esp-idf/components/wpa_supplicant/include -I/home/mikhail/esp/esp-idf/components/wpa_supplicant/port/include -I/home/mikhail/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/mikhail/esp/esp-idf/components/esp_wifi/include -I/home/mikhail/esp/esp-idf/components/unity/include -I/home/mikhail/esp/esp-idf/components/unity/unity/src -I/home/mikhail/esp/esp-idf/components/cmock/CMock/src -I/home/mikhail/esp/esp-idf/components/console -I/home/mikhail/esp/esp-idf/components/http_parser -I/home/mikhail/esp/esp-idf/components/esp-tls -I/home/mikhail/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/mikhail/esp/esp-idf/components/esp_adc/include -I/home/mikhail/esp/esp-idf/components/esp_adc/interface -I/home/mikhail/esp/esp-idf/components/esp_adc/esp32c3/include -I/home/mikhail/esp/esp-idf/components/esp_adc/deprecated/include -I/home/mikhail/esp/esp-idf/components/esp_eth/include -I/home/mikhail/esp/esp-idf/components/esp_gdbstub/include -I/home/mikhail/esp/esp-idf/components/esp_gdbstub/riscv -I/home/mikhail/esp/esp-idf/components/esp_gdbstub/esp32c3 -I/home/mikhail/esp/esp-idf/components/esp_hid/include -I/home/mikhail/esp/esp-idf/components/tcp_transport/include -I/home/mikhail/esp/esp-idf/components/esp_http_client/include -I/home/mikhail/esp/esp-idf/components/esp_http_server/include -I/home/mikhail/esp/esp-idf/components/esp_https_ota/include -I/home/mikhail/esp/esp-idf/components/esp_lcd/include -I/home/mikhail/esp/esp-idf/components/esp_lcd/interface -I/home/mikhail/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/mikhail/esp/esp-idf/components/protocomm/include/common -I/home/mikhail/esp/esp-idf/components/protocomm/include/security -I/home/mikhail/esp/esp-idf/components/protocomm/include/transports -I/home/mikhail/esp/esp-idf/components/esp_local_ctrl/include -I/home/mikhail/esp/esp-idf/components/esp_psram/include -I/home/mikhail/esp/esp-idf/components/sdmmc/include -I/home/mikhail/esp/esp-idf/components/esp_serial_slave_link/include -I/home/mikhail/esp/esp-idf/components/espcoredump/include -I/home/mikhail/esp/esp-idf/components/espcoredump/include/port/riscv -I/home/mikhail/esp/esp-idf/components/wear_levelling/include -I/home/mikhail/esp/esp-idf/components/fatfs/diskio -I/home/mikhail/esp/esp-idf/components/fatfs/vfs -I/home/mikhail/esp/esp-idf/components/fatfs/src -I/home/mikhail/esp/esp-idf/components/idf_test/include -I/home/mikhail/esp/esp-idf/components/idf_test/include/esp32c3 -I/home/mikhail/esp/esp-idf/components/ieee802154/include -I/home/mikhail/esp/esp-idf/components/json/cJSON -I/home/mikhail/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/mikhail/esp/esp-idf/components/spiffs/include -I/home/mikhail/esp/esp-idf/components/wifi_provisioning/include -march=rv32imc  -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fmacro-prefix-map=/home/mikhail/projects/roadmap/pogoda_espress=. -fmacro-prefix-map=/home/mikhail/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.1-dev-286-gbcb34ca7ae-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/pogoda_espress.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/pogoda_espress.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/pogoda_espress.c.obj -c /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:77:8: error: unknown type name 'pogoda_espress_ctx_t'
+   77 | static pogoda_espress_ctx_t global_ctx = {0};
+      |        ^~~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:77:29: error: conflicting types for 'global_ctx'; have 'int'
+   77 | static pogoda_espress_ctx_t global_ctx = {0};
+      |                             ^~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:73:21: note: previous definition of 'global_ctx' with type 'pogoda_ctx_t' {aka 'struct pogoda_ctx_s'}
+   73 | static pogoda_ctx_t global_ctx = {0};
+      |                     ^~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c: In function 'net_event_handler':
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:108:23: error: request for member 'try_num' in something not a structure or union
+  108 |         if (global_ctx.try_num < APP_WIFI_CONN_TRY_QTY)
+      |                       ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:111:23: error: request for member 'try_num' in something not a structure or union
+  111 |             global_ctx.try_num++;
+      |                       ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:117:19: error: request for member 'try_num' in something not a structure or union
+  117 |         global_ctx.try_num = 0;
+      |                   ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:116:28: warning: unused variable 'event' [-Wunused-variable]
+  116 |         ip_event_got_ip_t* event = (ip_event_got_ip_t*)ptr_event_data;
+      |                            ^~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c: In function 'wifi_init':
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:126:15: error: request for member 'wifi_event_group' in something not a structure or union
+  126 |     global_ctx.wifi_event_group = xEventGroupCreate();
+      |               ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:127:15: error: request for member 'try_num' in something not a structure or union
+  127 |     global_ctx.try_num = 0;
+      |               ^
+In file included from /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:25:
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c: In function 'weather_get_task':
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:9: note: in expansion of macro 'ESP_LOGE'
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      |         ^~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:9: note: in expansion of macro 'ESP_LOGE'
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      |         ^~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      | ^       ~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:9: note: in expansion of macro 'ESP_LOGE'
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      |         ^~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      | ^       ~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:9: note: in expansion of macro 'ESP_LOGE'
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      |         ^~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/mikhail/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:181:9: note: in expansion of macro 'ESP_LOGE'
+  181 |         ESP_LOGE("Get", "getaddrinfo(), error %d", err);
+      |         ^~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:48:11: error: expected ')' before ';' token
+   48 |     "\r\n";
+      |           ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:202:21: note: in expansion of macro 'API_YANDEX_GET_REQ'
+  202 |     if (write(sock, API_YANDEX_GET_REQ, strlen(API_YANDEX_GET_REQ)) < 0)
+      |                     ^~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:202:14: note: to match this '('
+  202 |     if (write(sock, API_YANDEX_GET_REQ, strlen(API_YANDEX_GET_REQ)) < 0)
+      |              ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:202:9: error: too few arguments to function 'write'
+  202 |     if (write(sock, API_YANDEX_GET_REQ, strlen(API_YANDEX_GET_REQ)) < 0)
+      |         ^~~~~
+In file included from /home/mikhail/esp/esp-idf/components/newlib/platform_include/sys/unistd.h:11,
+                 from /home/mikhail/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/sys-include/unistd.h:4,
+                 from /home/mikhail/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h:14,
+                 from /home/mikhail/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:51,
+                 from /home/mikhail/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:39,
+                 from /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:29:
+/home/mikhail/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/sys-include/sys/unistd.h:245:25: note: declared here
+  245 | _READ_WRITE_RETURN_TYPE write (int __fd, const void *__buf, size_t __nbyte);
+      |                         ^~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:205:15: error: 's' undeclared (first use in this function)
+  205 |         close(s);
+      |               ^
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:205:15: note: each undeclared identifier is reported only once for each function it appears in
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c: In function 'app_main':
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:61:37: error: 'APP_DELAY_COMMON_MS' undeclared (first use in this function)
+   61 | #define APP_DELAY_COMMON_MS         APP_DELAY_COMMON_MS                /**< Common used delay in milliseconds */
+      |                                     ^~~~~~~~~~~~~~~~~~~
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:287:16: note: in expansion of macro 'APP_DELAY_COMMON_MS'
+  287 |     vTaskDelay(APP_DELAY_COMMON_MS / portTICK_PERIOD_MS);
+      |                ^~~~~~~~~~~~~~~~~~~
+At top level:
+/home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:73:21: warning: 'global_ctx' defined but not used [-Wunused-variable]
+   73 | static pogoda_ctx_t global_ctx = {0};
+      |                     ^~~~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
