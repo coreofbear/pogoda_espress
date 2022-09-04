@@ -1,4 +1,4 @@
-/* * Data converted from /home/mikhail/projects/roadmap/pogoda_espress/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/mikhail/projects/roadmap/pogoda_tls/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

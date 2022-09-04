@@ -1,0 +1,475 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time 22:41:45[0m
+[0;32mI (30) boot: chip revision: V003[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21b88h (138120) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00031bb0 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=00034a04 vaddr=40380000 size=0b614h ( 46612) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=99b64h (629604) map[0m
+[0;32mI (237) esp_image: segment 4: paddr=000d9b8c vaddr=4038b614 size=046d0h ( 18128) load[0m
+[0;32mI (240) esp_image: segment 5: paddr=000de264 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (247) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (249) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) cpu_start: Pro cpu up.[0m
+[0;32mI (274) cpu_start: Pro cpu start user code[0m
+[0;32mI (274) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (274) cpu_start: Application information:[0m
+[0;32mI (277) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (283) cpu_start: App version:      10dd315-dirty[0m
+[0;32mI (288) cpu_start: Compile time:     Sep  4 2022 22:49:15[0m
+[0;32mI (295) cpu_start: ELF file SHA256:  0bdee0d2cb43c319...[0m
+[0;32mI (301) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (308) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (315) heap_init: At 3FC96F20 len 000457F0 (277 KiB): DRAM[0m
+[0;32mI (321) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (328) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (335) spi_flash: detected chip: generic[0m
+[0;32mI (339) spi_flash: flash io: dio[0m
+[0;33mW (343) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (356) cpu_start: Starting scheduler.[0m
+[0;32mI (366) pp: pp rom version: 9387209[0m
+[0;32mI (366) net80211: net80211 rom version: 9387209[0m
+I (376) wifi:wifi driver task: 3fc9fc6c, prio:23, stack:6656, core=0
+[0;32mI (376) system_api: Base MAC address is not set[0m
+[0;32mI (386) system_api: read default base MAC address from EFUSE[0m
+I (396) wifi:wifi firmware version: 6eba5b5
+I (396) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (396) wifi:config nano formating: disabled
+I (406) wifi:Init data frame dynamic rx buffer num: 32
+I (406) wifi:Init management frame dynamic rx buffer num: 32
+I (416) wifi:Init management short buffer num: 32
+I (416) wifi:Init dynamic tx buffer num: 32
+I (426) wifi:Init static tx FG buffer num: 2
+I (426) wifi:Init static rx buffer size: 1600
+I (426) wifi:Init static rx buffer num: 10
+I (436) wifi:Init dynamic rx buffer num: 32
+[0;32mI (436) wifi_init: rx ba win: 6[0m
+[0;32mI (446) wifi_init: tcpip mbox: 32[0m
+[0;32mI (446) wifi_init: udp mbox: 6[0m
+[0;32mI (446) wifi_init: tcp mbox: 6[0m
+[0;32mI (456) wifi_init: tcp tx win: 5744[0m
+[0;32mI (456) wifi_init: tcp rx win: 5744[0m
+[0;32mI (466) wifi_init: tcp mss: 1440[0m
+[0;32mI (466) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (466) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (476) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (506) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (506) wifi:enable tsf
+I (2256) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (2256) wifi:state: init -> auth (b0)
+I (2256) wifi:state: auth -> assoc (0)
+I (2276) wifi:state: assoc -> run (10)
+I (2306) wifi:connected with coreofbear, aid = 1, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (2306) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+I (2326) wifi:pm start, type: 1
+
+I (2326) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (2336) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (2356) wifi:BcnInt:102400, DTIM:2
+[0;32mI (2866) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (5516) Get: Updating time from NVS[0m
+W (21096) wifi:<ba-add>idx:1 (ifx:0, 1a:1b:45:7d:cd:7d), tid:1, ssn:0, winSize:64
+[0;31mE (21096) esp-tls-mbedtls: mbedtls_x509_crt_parse returned -0x2180[0m
+[0;31mE (21096) esp-tls-mbedtls: Failed to set client configurations, returned [0x8015] (ESP_ERR_MBEDTLS_X509_CRT_PARSE_FAILED)[0m
+[0;31mE (21106) esp-tls: create_ssl_handle failed[0m
+[0;31mE (21116) esp-tls: Failed to open new connection[0m
+[0;31mE (21116) Get: Connection failed...[0m
+
+assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)
+Core  0 register dump:
+MEPC    : 0x40380922  RA      : 0x40386f22  SP      : 0x3fca7da0  GP      : 0x3fc90600  
+TP      : 0x3fc86c64  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000080  S1      : 0x00000001  A0      : 0x3fca7ddc  A1      : 0x3fc919cd  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc97000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca7ef7  
+S4      : 0x3fc919cc  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fca7ddc "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/panic.c:412
+412	    *((volatile int *) 0) = 0; // NOLINT(clang-analyzer-core.NullDereference) should be an invalid operation on targets
+#0  panic_abort (details=details@entry=0x3fca7ddc "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/panic.c:412
+#1  0x40386f22 in esp_system_abort (details=details@entry=0x3fca7ddc "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/esp_system.c:135
+#2  0x4038d5ec in __assert_func (file=file@entry=0x3c0a1aa1 "", line=line@entry=126, func=<optimized out>, func@entry=0x3c0a1b10 <__func__.0> "", expr=expr@entry=0x3c0a1a4c "") at /home/mikhail/esp/esp-idf/components/newlib/assert.c:78
+#3  0x40389e56 in _prvTaskExitError () at /home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:126
+#4  0x40389e5e in prvTaskExitError () at /home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:140
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 0bdee0d2cb43c319
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 22:41:45[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21b88h (138120) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00031bb0 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034a04 vaddr=40380000 size=0b614h ( 46612) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=99b64h (629604) map[0m
+[0;32mI (242) esp_image: segment 4: paddr=000d9b8c vaddr=4038b614 size=046d0h ( 18128) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000de264 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (288) cpu_start: App version:      10dd315-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 22:49:15[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  0bdee0d2cb43c319...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (320) heap_init: At 3FC96F20 len 000457F0 (277 KiB): DRAM[0m
+[0;32mI (326) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fcf0, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (620) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (620) wifi:state: init -> auth (b0)
+I (620) wifi:state: auth -> init (1c0)
+I (630) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3080) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3080) wifi:state: init -> auth (b0)
+I (3080) wifi:state: auth -> assoc (0)
+I (3090) wifi:state: assoc -> run (10)
+I (3120) wifi:connected with coreofbear, aid = 2, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3120) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+I (3120) wifi:pm start, type: 1
+
+I (3120) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3140) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3180) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+I (11680) wifi:state: run -> init (3c0)
+I (11680) wifi:pm stop, total sleep time: 7811034 us / 8557871 us
+
+W (11680) wifi:<ba-del>idx
+I (11680) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (23830) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (23830) wifi:state: init -> auth (b0)
+I (23840) wifi:state: auth -> assoc (0)
+I (23850) wifi:state: assoc -> run (10)
+I (23880) wifi:connected with coreofbear, aid = 1, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (23880) wifi:security: WPA2-PSK, phy: bgn, rssi: -22
+I (23880) wifi:pm start, type: 1
+
+I (23880) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (23910) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (23930) wifi:BcnInt:102400, DTIM:2
+[0;32mI (24870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;31mE (27370) esp-tls: couldn't get hostname for :api.weather.yandex.ru: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (27370) esp-tls: Failed to open new connection[0m
+[0;31mE (27370) Get: Connection failed...[0m
+
+assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)
+Core  0 register dump:
+MEPC    : 0x40380922  RA      : 0x40386f22  SP      : 0x3fca7e20  GP      : 0x3fc90600  
+TP      : 0x3fc86ce4  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000080  S1      : 0x00000001  A0      : 0x3fca7e5c  A1      : 0x3fc919cd  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc97000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca7f77  
+S4      : 0x3fc919cc  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fca7e5c "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/panic.c:412
+412	    *((volatile int *) 0) = 0; // NOLINT(clang-analyzer-core.NullDereference) should be an invalid operation on targets
+#0  panic_abort (details=details@entry=0x3fca7e5c "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/panic.c:412
+#1  0x40386f22 in esp_system_abort (details=details@entry=0x3fca7e5c "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/esp_system.c:135
+#2  0x4038d5ec in __assert_func (file=file@entry=0x3c0a1aa1 "", line=line@entry=126, func=<optimized out>, func@entry=0x3c0a1b10 <__func__.0> "", expr=expr@entry=0x3c0a1a4c "") at /home/mikhail/esp/esp-idf/components/newlib/assert.c:78
+#3  0x40389e56 in _prvTaskExitError () at /home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:126
+#4  0x40389e5e in prvTaskExitError () at /home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:140
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 0bdee0d2cb43c319
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 22:41:45[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21b88h (138120) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00031bb0 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034a04 vaddr=40380000 size=0b614h ( 46612) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=99b64h (629604) map[0m
+[0;32mI (242) esp_image: segment 4: paddr=000d9b8c vaddr=4038b614 size=046d0h ( 18128) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000de264 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (288) cpu_start: App version:      10dd315-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 22:49:15[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  0bdee0d2cb43c319...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (320) heap_init: At 3FC96F20 len 000457F0 (277 KiB): DRAM[0m
+[0;32mI (326) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fcf0, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (580) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (590) wifi:state: init -> auth (b0)
+I (590) wifi:state: auth -> init (1c0)
+I (590) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3040) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3040) wifi:state: init -> auth (b0)
+I (3050) wifi:state: auth -> assoc (0)
+I (3060) wifi:state: assoc -> run (10)
+I (3150) wifi:connected with coreofbear, aid = 2, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3150) wifi:security: WPA2-PSK, phy: bgn, rssi: -21
+I (3160) wifi:pm start, type: 1
+
+I (3160) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3180) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3250) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+W (20610) wifi:<ba-add>idx:1 (ifx:0, 1a:1b:45:7d:cd:7d), tid:1, ssn:1, winSize:64
+[0;31mE (20610) esp-tls-mbedtls: mbedtls_x509_crt_parse returned -0x2180[0m
+[0;31mE (20610) esp-tls-mbedtls: Failed to set client configurations, returned [0x8015] (ESP_ERR_MBEDTLS_X509_CRT_PARSE_FAILED)[0m
+[0;31mE (20620) esp-tls: create_ssl_handle failed[0m
+[0;31mE (20630) esp-tls: Failed to open new connection[0m
+[0;31mE (20630) Get: Connection failed...[0m
+
+assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)
+Core  0 register dump:
+MEPC    : 0x40380922  RA      : 0x40386f22  SP      : 0x3fca7e20  GP      : 0x3fc90600  
+TP      : 0x3fc86ce4  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000080  S1      : 0x00000001  A0      : 0x3fca7e5c  A1      : 0x3fc919cd  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc97000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca7f77  
+S4      : 0x3fc919cc  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+panic_abort (details=details@entry=0x3fca7e5c "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/panic.c:412
+412	    *((volatile int *) 0) = 0; // NOLINT(clang-analyzer-core.NullDereference) should be an invalid operation on targets
+#0  panic_abort (details=details@entry=0x3fca7e5c "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/panic.c:412
+#1  0x40386f22 in esp_system_abort (details=details@entry=0x3fca7e5c "assert failed: _prvTaskExitError port.c:126 (uxCriticalNesting == ~0UL)") at /home/mikhail/esp/esp-idf/components/esp_system/esp_system.c:135
+#2  0x4038d5ec in __assert_func (file=file@entry=0x3c0a1aa1 "", line=line@entry=126, func=<optimized out>, func@entry=0x3c0a1b10 <__func__.0> "", expr=expr@entry=0x3c0a1a4c "") at /home/mikhail/esp/esp-idf/components/newlib/assert.c:78
+#3  0x40389e56 in _prvTaskExitError () at /home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:126
+#4  0x40389e5e in prvTaskExitError () at /home/mikhail/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:140
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 0bdee0d2cb43c319
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 22:41:45[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=21b88h (138120) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00031bb0 vaddr=3fc8fe00 size=02e4ch ( 11852) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00034a04 vaddr=40380000 size=0b614h ( 46612) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=99b64h (629604) map[0m
+[0;32mI (242) esp_image: segment 4: paddr=000d9b8c vaddr=4038b614 size=046d0h ( 18128) load[0m
+[0;32mI (245) esp_image: segment 5: paddr=000de264 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (270) cpu_start: Pro cpu up.[0m
+[0;32mI (279) cpu_start: Pro cpu start user code[0m
+[0;32mI (279) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) cpu_start: Application information:[0m
+[0;32mI (282) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (288) cpu_start: App version:      10dd315-dirty[0m
+[0;32mI (293) cpu_start: Compile time:     Sep  4 2022 22:49:15[0m
+[0;32mI (299) cpu_start: ELF file SHA256:  0bdee0d2cb43c319...[0m
+[0;32mI (305) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (320) heap_init: At 3FC96F20 len 000457F0 (277 KiB): DRAM[0m
+[0;32mI (326) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (332) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (339) spi_flash: detected chip: generic[0m
+[0;32mI (344) spi_flash: flash io: dio[0m
+[0;33mW (347) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (361) cpu_start: Starting scheduler.[0m
+[0;32mI (370) pp: pp rom version: 9387209[0m
+[0;32mI (370) net80211: net80211 rom version: 9387209[0m
+I (380) wifi:wifi driver task: 3fc9fcf0, prio:23, stack:6656, core=0
+[0;32mI (380) system_api: Base MAC address is not set[0m
+[0;32mI (390) system_api: read default base MAC address from EFUSE[0m
+I (400) wifi:wifi firmware version: 6eba5b5
+I (400) wifi:wifi certification version: v7.0
+I (400) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (410) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init management frame dynamic rx buffer num: 32
+I (420) wifi:Init management short buffer num: 32
+I (420) wifi:Init dynamic tx buffer num: 32
+I (430) wifi:Init static tx FG buffer num: 2
+I (430) wifi:Init static rx buffer size: 1600
+I (430) wifi:Init static rx buffer num: 10
+I (440) wifi:Init dynamic rx buffer num: 32
+[0;32mI (440) wifi_init: rx ba win: 6[0m
+[0;32mI (450) wifi_init: tcpip mbox: 32[0m
+[0;32mI (450) wifi_init: udp mbox: 6[0m
+[0;32mI (450) wifi_init: tcp mbox: 6[0m
+[0;32mI (460) wifi_init: tcp tx win: 5744[0m
+[0;32mI (460) wifi_init: tcp rx win: 5744[0m
+[0;32mI (470) wifi_init: tcp mss: 1440[0m
+[0;32mI (470) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (480) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (510) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (510) wifi:enable tsf
+I (570) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (570) wifi:state: init -> auth (b0)
+I (570) wifi:state: auth -> init (1c0)
+I (570) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3020) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1
+I (3020) wifi:state: init -> auth (b0)
+I (3030) wifi:state: auth -> assoc (0)
+I (3040) wifi:state: assoc -> run (10)
+I (3060) wifi:connected with coreofbear, aid = 3, channel 13, BW20, bssid = 1a:1b:45:7d:cd:7d
+I (3060) wifi:security: WPA2-PSK, phy: bgn, rssi: -22
+I (3060) wifi:pm start, type: 1
+
+I (3060) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3080) wifi:<ba-add>idx:0 (ifx:0, 1a:1b:45:7d:cd:7d), tid:0, ssn:0, winSize:64
+I (3120) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3870) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m

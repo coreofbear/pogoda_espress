@@ -1,4 +1,4 @@
-# Install script for directory: /home/mikhail/projects/roadmap/pogoda_espress
+# Install script for directory: /home/mikhail/projects/roadmap/pogoda_tls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/mikhail/projects/roadmap/pogoda_espress/build/esp-idf/cmake_install.cmake")
+  include("/home/mikhail/projects/roadmap/pogoda_tls/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mikhail/projects/roadmap/pogoda_espress/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mikhail/projects/roadmap/pogoda_tls/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

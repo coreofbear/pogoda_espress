@@ -25,6 +25,9 @@
 #include "esp_wifi.h"
 #include "esp_event.h"
 #include "esp_log.h"
+#include "esp_tls.h"
+#include "esp_sntp.h"
+#include "esp_netif.h"
 
 #include "nvs_flash.h"
 
@@ -39,7 +42,7 @@
 /******************** DEFINES ********************/
 
 #define API_YANDEX_HOST "api.weather.yandex.ru"                 /**< Host URL */
-#define API_YANDEX_PORT "80"                                    /**< TLS port */
+#define API_YANDEX_PORT "443"                                   /**< TLS port */
 #define API_YANDEX_PATH "/v2/informers?lat=59.9386&lon=30.3141" /**< Host path */
 #define API_YANDEX_KEY  "822a9b7c-bfdf-4f43-93b8-ac085bb84c1d"  /**< Yandex API key */
 /**< Yandex API weather GET request */
@@ -61,6 +64,35 @@
 #define WEATHER_GET_RX_TIMEOUT_S    10                  /**< Receiving timeout in seconds */
 
 #define APP_DELAY_COMMON_MS         5000                /**< Common used delay in milliseconds */
+
+/**< Server root CA */
+#define API_YANDEX_ROOT_CERT \
+    "-----BEGIN CERTIFICATE-----\r\n" \
+    "MIIETjCCAzagAwIBAgINAe5fFp3/lzUrZGXWajANBgkqhkiG9w0BAQsFADBXMQsw\r\n" \
+    "CQYDVQQGEwJCRTEZMBcGA1UEChMQR2xvYmFsU2lnbiBudi1zYTEQMA4GA1UECxMH\r\n" \
+    "Um9vdCBDQTEbMBkGA1UEAxMSR2xvYmFsU2lnbiBSb290IENBMB4XDTE4MDkxOTAw\r\n" \
+    "MDAwMFoXDTI4MDEyODEyMDAwMFowTDEgMB4GA1UECxMXR2xvYmFsU2lnbiBSb290\r\n" \
+    "IENBIC0gUjMxEzARBgNVBAoTCkdsb2JhbFNpZ24xEzARBgNVBAMTCkdsb2JhbFNp\r\n" \
+    "Z24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDMJXaQeQZ4Ihb1wIO2\r\n" \
+    "hMoonv0FdhHFrYhy/EYCQ8eyip0EXyTLLkvhYIJG4VKrDIFHcGzdZNHr9SyjD4I9\r\n" \
+    "DCuul9e2FIYQebs7E4B3jAjhSdJqYi8fXvqWaN+JJ5U4nwbXPsnLJlkNc96wyOkm\r\n" \
+    "DoMVxu9bi9IEYMpJpij2aTv2y8gokeWdimFXN6x0FNx04Druci8unPvQu7/1PQDh\r\n" \
+    "BjPogiuuU6Y6FnOM3UEOIDrAtKeh6bJPkC4yYOlXy7kEkmho5TgmYHWyn3f/kRTv\r\n" \
+    "riBJ/K1AFUjRAjFhGV64l++td7dkmnq/X8ET75ti+w1s4FRpFqkD2m7pg5NxdsZp\r\n" \
+    "hYIXAgMBAAGjggEiMIIBHjAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB\r\n" \
+    "/zAdBgNVHQ4EFgQUj/BLf6guRSSuTVD6Y5qL3uLdG7wwHwYDVR0jBBgwFoAUYHtm\r\n" \
+    "GkUNl8qJUC99BM00qP/8/UswPQYIKwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFo\r\n" \
+    "dHRwOi8vb2NzcC5nbG9iYWxzaWduLmNvbS9yb290cjEwMwYDVR0fBCwwKjAooCag\r\n" \
+    "JIYiaHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9yb290LmNybDBHBgNVHSAEQDA+\r\n" \
+    "MDwGBFUdIAAwNDAyBggrBgEFBQcCARYmaHR0cHM6Ly93d3cuZ2xvYmFsc2lnbi5j\r\n" \
+    "b20vcmVwb3NpdG9yeS8wDQYJKoZIhvcNAQELBQADggEBACNw6c/ivvVZrpRCb8RD\r\n" \
+    "M6rNPzq5ZBfyYgZLSPFAiAYXof6r0V88xjPy847dHx0+zBpgmYILrMf8fpqHKqV9\r\n" \
+    "D6ZX7qw7aoXW3r1AY/itpsiIsBL89kHfDwmXHjjqU5++BfQ+6tOfUBJ2vgmLwgtI\r\n" \
+    "fR4uUfaNU9OrH0Abio7tfftPeVZwXwzTjhuzp3ANNyuXlava4BJrHEDOxcd+7cJi\r\n" \
+    "WOx37XMiwor1hkOIreoTbv3Y/kIvuX1erRjvlJDKPSerJpSZdcfL03v3ykzTr1Eh\r\n" \
+    "kluEfSufFT90y1HonoMOFm8b50bOI7355KKL0jlrqnkckSziYSQtjipIcJDEHsXo\r\n" \
+    "4HA=\r\n" \
+    "-----END CERTIFICATE-----\r\n"
 
 /******************** STRUCTURES, ENUMS, UNIONS ********************/
 
@@ -166,75 +198,41 @@ static void wifi_init(void)
  */
 static void weather_get_task(void * ptr_params)
 {
-    const struct addrinfo hints = 
-    {
-        .ai_family = AF_INET,
-        .ai_socktype = SOCK_STREAM,
-    };
-    struct addrinfo * ptr_res = NULL;
     char recv_buf[WEATHER_GET_RX_BUF_SIZE];
 
-    int32_t err = getaddrinfo(API_YANDEX_HOST, API_YANDEX_PORT, &hints, &ptr_res);
-    if (0 != err || ptr_res == NULL) 
+    esp_tls_t * ptr_tls = esp_tls_init();
+    esp_tls_cfg_t tls_cfg = 
     {
-        ESP_LOGE("Get", "getaddrinfo()");
-        return;
-    }
+        .cacert_buf = (const unsigned char *)API_YANDEX_ROOT_CERT,
+        .cacert_bytes = strlen(API_YANDEX_ROOT_CERT),
+        .timeout_ms = 1000
+    };
+    esp_tls_conn_http_new_sync(API_YANDEX_HOST, &tls_cfg, ptr_tls);
+    esp_tls_conn_write(ptr_tls, API_YANDEX_GET_REQ, strlen(API_YANDEX_GET_REQ));
+    printf("\n\n%s\n\n\n", API_YANDEX_GET_REQ);
 
-    int32_t sock = socket(ptr_res->ai_family, ptr_res->ai_socktype, 0);
-    if (sock < 0) 
+    int32_t ret = 0;
+    for (;;)
     {
-        freeaddrinfo(ptr_res);
-        ESP_LOGE("Get", "socket()");
-        return;
-    }
+        memset(recv_buf, 0x00, sizeof(recv_buf));
+        ret = esp_tls_conn_read(ptr_tls, recv_buf, sizeof(recv_buf) - sizeof('\0'));
 
-    if (connect(sock, ptr_res->ai_addr, ptr_res->ai_addrlen) != 0) 
-    {
-        ESP_LOGE("Get", "connect()");
-        close(sock);
-        return;
-    }
-
-    freeaddrinfo(ptr_res);
-
-    printf("\n%s\n\n", API_YANDEX_GET_REQ);
-
-    if (write(sock, API_YANDEX_GET_REQ, strlen(API_YANDEX_GET_REQ)) < 0) 
-    {
-        ESP_LOGE("Get", "write()");
-        close(sock);
-        return;
-    }
-
-    struct timeval receiving_timeout;
-    receiving_timeout.tv_sec = WEATHER_GET_RX_TIMEOUT_S;
-    receiving_timeout.tv_usec = 0;
-    if (setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, &receiving_timeout, sizeof(receiving_timeout)) < 0) 
-    {
-        close(sock);
-        return;
-    }
-
-    int32_t rx_bytes = 0;
-    do {
-        bzero(recv_buf, sizeof(recv_buf));
-        rx_bytes = read(sock, recv_buf, sizeof(recv_buf) - sizeof('\0'));
-
-        for(int32_t idx = 0; idx < rx_bytes; idx++) {
-            putchar(recv_buf[idx]);
-        }
-        putchar('\n');
-
-        if (rx_bytes <= 0)
-        {
+        if (ret == ESP_TLS_ERR_SSL_WANT_WRITE  || ret == ESP_TLS_ERR_SSL_WANT_READ) {
+            vTaskDelay(300 / portTICK_PERIOD_MS);
+            continue;
+        } else if (ret <= 0) {
             break;
         }
 
         weather_display(strchr(recv_buf, '{'));
-    } while (rx_bytes > 0);
 
-    close(sock);
+        for(int32_t idx = 0; idx < ret; idx++) {
+            putchar(recv_buf[idx]);
+        }
+        putchar('\n');
+    }
+
+    esp_tls_conn_destroy(ptr_tls);
     
     vTaskDelay(APP_DELAY_COMMON_MS / portTICK_PERIOD_MS);
 }
