@@ -1,4 +1,4 @@
-# Install script for directory: /home/mikhail/projects/roadmap/hello_world/main
+# Install script for directory: /home/mikhail/projects/roadmap/pogoda_espress/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

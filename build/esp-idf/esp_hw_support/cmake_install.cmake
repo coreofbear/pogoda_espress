@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/mikhail/projects/roadmap/hello_world/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake")
+  include("/home/mikhail/projects/roadmap/pogoda_espress/build/esp-idf/esp_hw_support/port/esp32c3/cmake_install.cmake")
 endif()
 

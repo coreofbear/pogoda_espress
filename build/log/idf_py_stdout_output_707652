@@ -1,0 +1,536 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time 20:14:08[0m
+[0;32mI (30) boot: chip revision: V003[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1d2f8h (119544) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002d320 vaddr=3fc8fe00 size=02cf8h ( 11512) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=870c0h (553152) map[0m
+[0;32mI (213) esp_image: segment 3: paddr=000b70e8 vaddr=3fc92af8 size=0010ch (   268) load[0m
+[0;32mI (213) esp_image: segment 4: paddr=000b71fc vaddr=40380000 size=0fc74h ( 64628) load[0m
+[0;32mI (230) esp_image: segment 5: paddr=000c6e78 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (236) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (236) boot: Disabling RNG early entropy source...[0m
+[0;32mI (251) cpu_start: Pro cpu up.[0m
+[0;32mI (260) cpu_start: Pro cpu start user code[0m
+[0;32mI (260) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (260) cpu_start: Application information:[0m
+[0;32mI (263) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (268) cpu_start: App version:      f026049-dirty[0m
+[0;32mI (274) cpu_start: Compile time:     Aug 20 2022 20:13:59[0m
+[0;32mI (280) cpu_start: ELF file SHA256:  14cd181fde836567...[0m
+[0;32mI (286) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (293) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (300) heap_init: At 3FC96D60 len 000459B0 (278 KiB): DRAM[0m
+[0;32mI (306) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (313) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (324) spi_flash: flash io: dio[0m
+[0;33mW (328) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (341) cpu_start: Starting scheduler.[0m
+Connecting to WiFi network...
+[0;32mI (353) pp: pp rom version: 9387209[0m
+[0;32mI (353) net80211: net80211 rom version: 9387209[0m
+I (373) wifi:wifi driver task: 3fc9fa34, prio:23, stack:6656, core=0
+[0;32mI (373) system_api: Base MAC address is not set[0m
+[0;32mI (373) system_api: read default base MAC address from EFUSE[0m
+I (383) wifi:wifi firmware version: 6eba5b5
+I (383) wifi:wifi certification version: v7.0
+I (383) wifi:config NVS flash: enabled
+I (393) wifi:config nano formating: disabled
+I (393) wifi:Init data frame dynamic rx buffer num: 32
+I (393) wifi:Init management frame dynamic rx buffer num: 32
+I (403) wifi:Init management short buffer num: 32
+I (403) wifi:Init dynamic tx buffer num: 32
+I (413) wifi:Init static tx FG buffer num: 2
+I (413) wifi:Init static rx buffer size: 1600
+I (423) wifi:Init static rx buffer num: 10
+I (423) wifi:Init dynamic rx buffer num: 32
+[0;32mI (423) wifi_init: rx ba win: 6[0m
+[0;32mI (433) wifi_init: tcpip mbox: 32[0m
+[0;32mI (433) wifi_init: udp mbox: 6[0m
+[0;32mI (443) wifi_init: tcp mbox: 6[0m
+[0;32mI (443) wifi_init: tcp tx win: 5744[0m
+[0;32mI (443) wifi_init: tcp rx win: 5744[0m
+[0;32mI (453) wifi_init: tcp mss: 1440[0m
+[0;32mI (453) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (463) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (463) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (503) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (503) wifi:enable tsf
+I (503) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (513) wifi:state: init -> auth (b0)
+I (513) wifi:state: auth -> init (1c0)
+I (513) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (2923) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (2933) wifi:state: init -> auth (b0)
+I (2973) wifi:state: auth -> assoc (0)
+I (2983) wifi:state: assoc -> run (10)
+I (3023) wifi:connected with coreofbear, aid = 9, channel 5, BW20, bssid = 6a:19:c7:35:da:42
+I (3023) wifi:security: WPA2-PSK, phy: bgn, rssi: -29
+I (3033) wifi:pm start, type: 1
+
+I (3033) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (3053) wifi:<ba-add>idx:0 (ifx:0, 6a:19:c7:35:da:42), tid:0, ssn:0, winSize:64
+I (3053) wifi:BcnInt:102400, DTIM:2
+[0;32mI (3853) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+Connected!
+Getting weather...
+Resolving server address...
+W (5823) wifi:<ba-add>idx:1 (ifx:0, 6a:19:c7:35:da:42), tid:1, ssn:0, winSize:64
+Connected to Yandex
+HTTP/1.1 200 OK
+Content-Length: 1172
+Content-Type: application/json
+Date: Sat, 20 Aug 2022 19:05:43 GMT
+X-Yandex-Req-Id: 
+
+{"now":1661022343,"now_dt":"2022-08-20T19:05:43.971737Z","info":{"url":"https://yandex.ru/pogoda/2?lat=59.9386\u0026lon=30.3141","lat":59.9386,"lon":30.3141},"fact":{"obs_time":1661022000,"temp":20,"feels_like":18,"temp_water":19,"icon":"skc_n","condition":"clear","wind_speed":1,"wind_dir":"e","pressure_mm":765,"pressure_pa":1019,"humidity":39,"daytime":"n","polar":false,"season":"summer","wind_gust":7},"forecast":{"date":"2022-08-21","date_ts":1661029200,"week":33,"sunrise":"05:26","sunset":"20:37","moon_code":5,"moon_text":"moon-code-5","parts":[{"part_name":"night","temp_min":16,"temp_avg":18,"temp_max":20,"temp_water":19,"wind_speed":3.4,"wind_gust":9.4,"wind_dir":"se","pressure_mm":765,"pressure_pa":1019,"humidity":72,"prec_mm":0,"prec_prob":0,"prec_period":480,"icon":"skc_n","condition":"clear","feels_like":17,"daytime":"n","polar":false},{"part_name":"morning","temp_min":15,"temp_avg":18,"temp_max":20,"temp_water":18,"wind_speed":4.5,"wind_gust":9.3,"wind_dir":"se","pressure_mm":763,"pressure_pa":1017,"humidity":75,"prec_mm":0,"prec_prob":0,"prec_period":360,"icon":"skc_d","condition":"partly-cloudy","feels_like":16,"daytime":"d","polar":false}]}}
+
+1301 bytes received
+Type: 16
+
+
+-1 bytes received
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420075fa  RA      : 0x420075fa  SP      : 0x3fca6640  GP      : 0x3fc90600  
+TP      : 0x3fc8a2b0  T0      : 0x4005890e  T1      : 0x3fca629c  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xffffffff  A0      : 0x00000000  A1      : 0x3c095090  
+A2      : 0x00000000  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x00000036  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x0000000c  
+MHARTID : 0x00000000  
+
+http_get_task (pvParameters=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:179
+179	            printf("Type: %d\n", ptr_json_condition->type);
+#0  http_get_task (pvParameters=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:179
+#1  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 14cd181fde836567
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1d2f8h (119544) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002d320 vaddr=3fc8fe00 size=02cf8h ( 11512) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=870c0h (553152) map[0m
+[0;32mI (218) esp_image: segment 3: paddr=000b70e8 vaddr=3fc92af8 size=0010ch (   268) load[0m
+[0;32mI (218) esp_image: segment 4: paddr=000b71fc vaddr=40380000 size=0fc74h ( 64628) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000c6e78 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (240) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (241) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Pro cpu up.[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) cpu_start: Application information:[0m
+[0;32mI (267) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (273) cpu_start: App version:      f026049-dirty[0m
+[0;32mI (278) cpu_start: Compile time:     Aug 20 2022 20:13:59[0m
+[0;32mI (285) cpu_start: ELF file SHA256:  14cd181fde836567...[0m
+[0;32mI (291) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (298) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FC96D60 len 000459B0 (278 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (318) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (325) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) cpu_start: Starting scheduler.[0m
+Connecting to WiFi network...
+[0;32mI (358) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+I (378) wifi:wifi driver task: 3fc9fa34, prio:23, stack:6656, core=0
+[0;32mI (378) system_api: Base MAC address is not set[0m
+[0;32mI (378) system_api: read default base MAC address from EFUSE[0m
+I (388) wifi:wifi firmware version: 6eba5b5
+I (388) wifi:wifi certification version: v7.0
+I (388) wifi:config NVS flash: enabled
+I (398) wifi:config nano formating: disabled
+I (398) wifi:Init data frame dynamic rx buffer num: 32
+I (398) wifi:Init management frame dynamic rx buffer num: 32
+I (408) wifi:Init management short buffer num: 32
+I (408) wifi:Init dynamic tx buffer num: 32
+I (418) wifi:Init static tx FG buffer num: 2
+I (418) wifi:Init static rx buffer size: 1600
+I (428) wifi:Init static rx buffer num: 10
+I (428) wifi:Init dynamic rx buffer num: 32
+[0;32mI (428) wifi_init: rx ba win: 6[0m
+[0;32mI (438) wifi_init: tcpip mbox: 32[0m
+[0;32mI (438) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp tx win: 5744[0m
+[0;32mI (448) wifi_init: tcp rx win: 5744[0m
+[0;32mI (458) wifi_init: tcp mss: 1440[0m
+[0;32mI (458) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (468) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (508) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (508) wifi:enable tsf
+I (508) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (518) wifi:state: init -> auth (b0)
+I (518) wifi:state: auth -> init (1c0)
+I (518) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (2938) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (2938) wifi:state: init -> auth (b0)
+I (2978) wifi:state: auth -> assoc (0)
+I (2988) wifi:state: assoc -> run (10)
+I (3038) wifi:connected with coreofbear, aid = 10, channel 5, BW20, bssid = 6a:19:c7:35:da:42
+I (3038) wifi:security: WPA2-PSK, phy: bgn, rssi: -30
+I (3038) wifi:pm start, type: 1
+
+I (3038) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+I (3048) wifi:BcnInt:102400, DTIM:2
+W (3058) wifi:<ba-add>idx:0 (ifx:0, 6a:19:c7:35:da:42), tid:0, ssn:0, winSize:64
+[0;32mI (3858) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+W (4698) wifi:<ba-add>idx:1 (ifx:0, 6a:19:c7:35:da:42), tid:1, ssn:0, winSize:64
+Connected!
+Getting weather...
+Resolving server address...
+Connected to Yandex
+HTTP/1.1 200 OK
+Content-Length: 1172
+Content-Type: application/json
+Date: Sat, 20 Aug 2022 19:05:55 GMT
+X-Yandex-Req-Id: 
+
+{"now":1661022355,"now_dt":"2022-08-20T19:05:55.260037Z","info":{"url":"https://yandex.ru/pogoda/2?lat=59.9386\u0026lon=30.3141","lat":59.9386,"lon":30.3141},"fact":{"obs_time":1661022000,"temp":20,"feels_like":18,"temp_water":19,"icon":"skc_n","condition":"clear","wind_speed":1,"wind_dir":"e","pressure_mm":765,"pressure_pa":1019,"humidity":39,"daytime":"n","polar":false,"season":"summer","wind_gust":7},"forecast":{"date":"2022-08-21","date_ts":1661029200,"week":33,"sunrise":"05:26","sunset":"20:37","moon_code":5,"moon_text":"moon-code-5","parts":[{"part_name":"night","temp_min":16,"temp_avg":18,"temp_max":20,"temp_water":19,"wind_speed":3.4,"wind_gust":9.4,"wind_dir":"se","pressure_mm":765,"pressure_pa":1019,"humidity":72,"prec_mm":0,"prec_prob":0,"prec_period":480,"icon":"skc_n","condition":"clear","feels_like":17,"daytime":"n","polar":false},{"part_name":"morning","temp_min":15,"temp_avg":18,"temp_max":20,"temp_water":18,"wind_speed":4.5,"wind_gust":9.3,"wind_dir":"se","pressure_mm":763,"pressure_pa":1017,"humidity":75,"prec_mm":0,"prec_prob":0,"prec_period":360,"icon":"skc_d","condition":"partly-cloudy","feels_like":16,"daytime":"d","polar":false}]}}
+
+1301 bytes received
+Type: 16
+
+
+-1 bytes received
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420075fa  RA      : 0x420075fa  SP      : 0x3fca6640  GP      : 0x3fc90600  
+TP      : 0x3fc8a2b0  T0      : 0x4005890e  T1      : 0x3fca629c  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xffffffff  A0      : 0x00000000  A1      : 0x3c095090  
+A2      : 0x00000000  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x00000036  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x0000000c  
+MHARTID : 0x00000000  
+
+http_get_task (pvParameters=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:179
+179	            printf("Type: %d\n", ptr_json_condition->type);
+#0  http_get_task (pvParameters=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:179
+#1  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 14cd181fde836567
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1d2f8h (119544) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002d320 vaddr=3fc8fe00 size=02cf8h ( 11512) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=870c0h (553152) map[0m
+[0;32mI (218) esp_image: segment 3: paddr=000b70e8 vaddr=3fc92af8 size=0010ch (   268) load[0m
+[0;32mI (218) esp_image: segment 4: paddr=000b71fc vaddr=40380000 size=0fc74h ( 64628) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000c6e78 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (240) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (241) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Pro cpu up.[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) cpu_start: Application information:[0m
+[0;32mI (267) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (273) cpu_start: App version:      f026049-dirty[0m
+[0;32mI (278) cpu_start: Compile time:     Aug 20 2022 20:13:59[0m
+[0;32mI (284) cpu_start: ELF file SHA256:  14cd181fde836567...[0m
+[0;32mI (290) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (297) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FC96D60 len 000459B0 (278 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (318) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (325) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) cpu_start: Starting scheduler.[0m
+Connecting to WiFi network...
+[0;32mI (358) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+I (378) wifi:wifi driver task: 3fc9fa34, prio:23, stack:6656, core=0
+[0;32mI (378) system_api: Base MAC address is not set[0m
+[0;32mI (378) system_api: read default base MAC address from EFUSE[0m
+I (388) wifi:wifi firmware version: 6eba5b5
+I (388) wifi:wifi certification version: v7.0
+I (388) wifi:config NVS flash: enabled
+I (398) wifi:config nano formating: disabled
+I (398) wifi:Init data frame dynamic rx buffer num: 32
+I (398) wifi:Init management frame dynamic rx buffer num: 32
+I (408) wifi:Init management short buffer num: 32
+I (408) wifi:Init dynamic tx buffer num: 32
+I (418) wifi:Init static tx FG buffer num: 2
+I (418) wifi:Init static rx buffer size: 1600
+I (428) wifi:Init static rx buffer num: 10
+I (428) wifi:Init dynamic rx buffer num: 32
+[0;32mI (428) wifi_init: rx ba win: 6[0m
+[0;32mI (438) wifi_init: tcpip mbox: 32[0m
+[0;32mI (438) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp tx win: 5744[0m
+[0;32mI (448) wifi_init: tcp rx win: 5744[0m
+[0;32mI (458) wifi_init: tcp mss: 1440[0m
+[0;32mI (458) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (468) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (508) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (508) wifi:enable tsf
+I (508) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (518) wifi:state: init -> auth (b0)
+I (1518) wifi:state: auth -> init (200)
+I (1518) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (3928) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (3928) wifi:state: init -> auth (b0)
+I (3938) wifi:state: auth -> init (1c0)
+I (3938) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+Connected!
+Getting weather...
+Resolving server address...
+[0;31mE (5508) HTTP: getaddrinfo(), error 202[0m
+I (6358) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (6358) wifi:state: init -> auth (b0)
+I (6398) wifi:state: auth -> assoc (0)
+I (6408) wifi:state: assoc -> run (10)
+I (6458) wifi:connected with coreofbear, aid = 11, channel 5, BW20, bssid = 6a:19:c7:35:da:42
+I (6458) wifi:security: WPA2-PSK, phy: bgn, rssi: -28
+I (6468) wifi:pm start, type: 1
+
+I (6468) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+W (6488) wifi:<ba-add>idx:0 (ifx:0, 6a:19:c7:35:da:42), tid:0, ssn:0, winSize:64
+Resolving server address...
+[0;31mE (6508) HTTP: getaddrinfo(), error 202[0m
+I (6518) wifi:BcnInt:102400, DTIM:2
+[0;32mI (7358) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+Resolving server address...
+W (7638) wifi:<ba-add>idx:1 (ifx:0, 6a:19:c7:35:da:42), tid:1, ssn:0, winSize:64
+Connected to Yandex
+HTTP/1.1 200 OK
+Content-Length: 1172
+Content-Type: application/json
+Date: Sat, 20 Aug 2022 19:06:08 GMT
+X-Yandex-Req-Id: 
+
+{"now":1661022368,"now_dt":"2022-08-20T19:06:08.760414Z","info":{"url":"https://yandex.ru/pogoda/2?lat=59.9386\u0026lon=30.3141","lat":59.9386,"lon":30.3141},"fact":{"obs_time":1661022000,"temp":20,"feels_like":18,"temp_water":19,"icon":"skc_n","condition":"clear","wind_speed":1,"wind_dir":"e","pressure_mm":765,"pressure_pa":1019,"humidity":39,"daytime":"n","polar":false,"season":"summer","wind_gust":7},"forecast":{"date":"2022-08-21","date_ts":1661029200,"week":33,"sunrise":"05:26","sunset":"20:37","moon_code":5,"moon_text":"moon-code-5","parts":[{"part_name":"night","temp_min":16,"temp_avg":18,"temp_max":20,"temp_water":19,"wind_speed":3.4,"wind_gust":9.4,"wind_dir":"se","pressure_mm":765,"pressure_pa":1019,"humidity":72,"prec_mm":0,"prec_prob":0,"prec_period":480,"icon":"skc_n","condition":"clear","feels_like":17,"daytime":"n","polar":false},{"part_name":"morning","temp_min":15,"temp_avg":18,"temp_max":20,"temp_water":18,"wind_speed":4.5,"wind_gust":9.3,"wind_dir":"se","pressure_mm":763,"pressure_pa":1017,"humidity":75,"prec_mm":0,"prec_prob":0,"prec_period":360,"icon":"skc_d","condition":"partly-cloudy","feels_like":16,"daytime":"d","polar":false}]}}
+
+1301 bytes received
+Type: 16
+
+
+-1 bytes received
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420075fa  RA      : 0x420075fa  SP      : 0x3fca5f10  GP      : 0x3fc90600  
+TP      : 0x3fc89b80  T0      : 0x4005890e  T1      : 0x3fca5b6c  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0xffffffff  A0      : 0x00000000  A1      : 0x3c095090  
+A2      : 0x00000000  A3      : 0x00000005  A4      : 0x3fc97000  A5      : 0x00000000  
+A6      : 0x60023000  A7      : 0x0000000a  S2      : 0x00000036  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x0000000c  
+MHARTID : 0x00000000  
+
+http_get_task (pvParameters=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:179
+179	            printf("Type: %d\n", ptr_json_condition->type);
+#0  http_get_task (pvParameters=<optimized out>) at /home/mikhail/projects/roadmap/pogoda_espress/main/pogoda_espress.c:179
+#1  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+ELF file SHA256: 14cd181fde836567
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806ce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x16f0
+load:0x403cc710,len:0x95c
+load:0x403ce710,len:0x2dc0
+entry 0x403cc710
+[0;32mI (35) boot: ESP-IDF v5.1-dev-286-gbcb34ca7ae-dirty 2nd stage bootloader[0m
+[0;32mI (35) boot: compile time 20:14:08[0m
+[0;32mI (35) boot: chip revision: V003[0m
+[0;32mI (39) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1d2f8h (119544) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002d320 vaddr=3fc8fe00 size=02cf8h ( 11512) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=870c0h (553152) map[0m
+[0;32mI (218) esp_image: segment 3: paddr=000b70e8 vaddr=3fc92af8 size=0010ch (   268) load[0m
+[0;32mI (218) esp_image: segment 4: paddr=000b71fc vaddr=40380000 size=0fc74h ( 64628) load[0m
+[0;32mI (235) esp_image: segment 5: paddr=000c6e78 vaddr=50000010 size=00010h (    16) load[0m
+[0;32mI (240) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (241) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Pro cpu up.[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (264) cpu_start: Application information:[0m
+[0;32mI (267) cpu_start: Project name:     pogoda_espress[0m
+[0;32mI (273) cpu_start: App version:      f026049-dirty[0m
+[0;32mI (278) cpu_start: Compile time:     Aug 20 2022 20:13:59[0m
+[0;32mI (285) cpu_start: ELF file SHA256:  14cd181fde836567...[0m
+[0;32mI (290) cpu_start: ESP-IDF:          v5.1-dev-286-gbcb34ca7ae-dirty[0m
+[0;32mI (298) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (305) heap_init: At 3FC96D60 len 000459B0 (278 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (318) heap_init: At 50000020 len 00001FE0 (7 KiB): RTCRAM[0m
+[0;32mI (325) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) cpu_start: Starting scheduler.[0m
+Connecting to WiFi network...
+[0;32mI (358) pp: pp rom version: 9387209[0m
+[0;32mI (358) net80211: net80211 rom version: 9387209[0m
+I (378) wifi:wifi driver task: 3fc9fa34, prio:23, stack:6656, core=0
+[0;32mI (378) system_api: Base MAC address is not set[0m
+[0;32mI (378) system_api: read default base MAC address from EFUSE[0m
+I (388) wifi:wifi firmware version: 6eba5b5
+I (388) wifi:wifi certification version: v7.0
+I (388) wifi:config NVS flash: enabled
+I (398) wifi:config nano formating: disabled
+I (398) wifi:Init data frame dynamic rx buffer num: 32
+I (398) wifi:Init management frame dynamic rx buffer num: 32
+I (408) wifi:Init management short buffer num: 32
+I (408) wifi:Init dynamic tx buffer num: 32
+I (418) wifi:Init static tx FG buffer num: 2
+I (418) wifi:Init static rx buffer size: 1600
+I (428) wifi:Init static rx buffer num: 10
+I (428) wifi:Init dynamic rx buffer num: 32
+[0;32mI (428) wifi_init: rx ba win: 6[0m
+[0;32mI (438) wifi_init: tcpip mbox: 32[0m
+[0;32mI (438) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp tx win: 5744[0m
+[0;32mI (448) wifi_init: tcp rx win: 5744[0m
+[0;32mI (458) wifi_init: tcp mss: 1440[0m
+[0;32mI (458) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (468) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (468) phy_init: phy_version 912,d001756,Jun  2 2022,16:28:07[0m
+I (508) wifi:mode : sta (34:b4:72:4e:17:4c)
+I (508) wifi:enable tsf
+I (508) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (518) wifi:state: init -> auth (b0)
+I (1518) wifi:state: auth -> init (200)
+I (1518) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (3928) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (3928) wifi:state: init -> auth (b0)
+I (4928) wifi:state: auth -> init (200)
+I (4928) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+Connected!
+Getting weather...
+Resolving server address...
+[0;31mE (5508) HTTP: getaddrinfo(), error 202[0m
+Resolving server address...
+[0;31mE (6508) HTTP: getaddrinfo(), error 202[0m
+I (7348) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (7348) wifi:state: init -> auth (b0)
+I (7438) wifi:state: auth -> init (1c0)
+I (7438) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+Resolving server address...
+[0;31mE (7508) HTTP: getaddrinfo(), error 202[0m
+Resolving server address...
+[0;31mE (8508) HTTP: getaddrinfo(), error 202[0m
+Resolving server address...
+[0;31mE (9508) HTTP: getaddrinfo(), error 202[0m
+I (9858) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (9858) wifi:state: init -> auth (b0)
+I (9908) wifi:state: auth -> assoc (0)
+I (9908) wifi:state: assoc -> run (10)
+I (9968) wifi:connected with coreofbear, aid = 12, channel 5, BW20, bssid = 6a:19:c7:35:da:42
+I (9968) wifi:security: WPA2-PSK, phy: bgn, rssi: -30
+I (9968) wifi:pm start, type: 1
+
+I (9968) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+I (9988) wifi:BcnInt:102400, DTIM:2
+W (9988) wifi:<ba-add>idx:0 (ifx:0, 6a:19:c7:35:da:42), tid:0, ssn:0, winSize:64
+Resolving server address...
+[0;32mI (10858) esp_netif_handlers: sta ip: 192.168.43.11, mask: 255.255.255.0, gw: 192.168.43.1[0m
+Connected to Yandex
+W (11628) wifi:<ba-add>idx:1 (ifx:0, 6a:19:c7:35:da:42), tid:1, ssn:1, winSize:64
+HTTP/1.1 200 OK
+Content-Length: 1172
+Content-Type: application/json
+Date: Sat, 20 Aug 2022 19:06:26 GMT
+X-Yandex-Req-Id: 
+
+{"now":1661022386,"now_dt":"2022-08-20T19:06:26.061097Z","info":{"url":"https://yandex.ru/pogoda/2?lat=59.9386\u0026lon=30.3141","lat":59.9386,"lon":30.3141},"fact":{"obs_time":1661022000,"temp":20,"feels_like":18,"temp_water":19,"icon":"skc_n","condition":"clear","wind_speed":1,"wind_dir":"e","pressure_mm":765,"pressure_pa":1019,"humidity":39,"daytime":"n","polar":false,"season":"summer","wind_gust":7},"forecast":{"date":"2022-08-21","date_ts":1661029200,"week":33,"sunrise":"05:26","sunset":"20:37","moon_code":5,"moon_text":"moon-code-5","parts":[{"part_name":"night","temp_min":16,"temp_avg":18,"temp_max":20,"temp_water":19,"wind_speed":3.4,"wind_gust":9.4,"wind_dir":"se","pressure_mm":765,"pressure_pa":1019,"humidity":72,"prec_mm":0,"prec_prob":0,"prec_period":480,"icon":"skc_n","condition":"clear","feels_like":17,"daytime":"n","polar":false},{"part_name":"morning","temp_min":15,"temp_avg":18,"temp_max":20,"temp_water":18,"wind_speed":4.5,"wind_gust":9.3,"wind_dir":"se","pressure_mm":763,"pressure_pa":1017,"humidity":75,"prec_mm":0,"prec_prob":0,"prec_period":360,"icon":"skc_d","condition":"partly-cloudy","feels_like":16,"daytime":"d","polar":false}]}}
+
+1301 bytes received
+Type: 16

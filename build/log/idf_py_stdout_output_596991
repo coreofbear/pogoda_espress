@@ -1,0 +1,43 @@
+-- Found Git: /sbin/git (found version "2.37.1") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/mikhail/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/mikhail/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/mikhail/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file /home/mikhail/projects/roadmap/pogoda_espress/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/mikhail/.espressif/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.5") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "pogoda_espress" version: f026049-dirty
+-- Adding linker script /home/mikhail/projects/roadmap/pogoda_espress/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /home/mikhail/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_serial_slave_link esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport tinyusb ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /home/mikhail/esp/esp-idf/components/app_trace /home/mikhail/esp/esp-idf/components/app_update /home/mikhail/esp/esp-idf/components/bootloader /home/mikhail/esp/esp-idf/components/bootloader_support /home/mikhail/esp/esp-idf/components/bt /home/mikhail/esp/esp-idf/components/cmock /home/mikhail/esp/esp-idf/components/console /home/mikhail/esp/esp-idf/components/cxx /home/mikhail/esp/esp-idf/components/driver /home/mikhail/esp/esp-idf/components/efuse /home/mikhail/esp/esp-idf/components/esp-tls /home/mikhail/esp/esp-idf/components/esp_adc /home/mikhail/esp/esp-idf/components/esp_app_format /home/mikhail/esp/esp-idf/components/esp_common /home/mikhail/esp/esp-idf/components/esp_eth /home/mikhail/esp/esp-idf/components/esp_event /home/mikhail/esp/esp-idf/components/esp_gdbstub /home/mikhail/esp/esp-idf/components/esp_hid /home/mikhail/esp/esp-idf/components/esp_http_client /home/mikhail/esp/esp-idf/components/esp_http_server /home/mikhail/esp/esp-idf/components/esp_https_ota /home/mikhail/esp/esp-idf/components/esp_https_server /home/mikhail/esp/esp-idf/components/esp_hw_support /home/mikhail/esp/esp-idf/components/esp_lcd /home/mikhail/esp/esp-idf/components/esp_local_ctrl /home/mikhail/esp/esp-idf/components/esp_netif /home/mikhail/esp/esp-idf/components/esp_phy /home/mikhail/esp/esp-idf/components/esp_pm /home/mikhail/esp/esp-idf/components/esp_psram /home/mikhail/esp/esp-idf/components/esp_ringbuf /home/mikhail/esp/esp-idf/components/esp_rom /home/mikhail/esp/esp-idf/components/esp_serial_slave_link /home/mikhail/esp/esp-idf/components/esp_system /home/mikhail/esp/esp-idf/components/esp_timer /home/mikhail/esp/esp-idf/components/esp_wifi /home/mikhail/esp/esp-idf/components/espcoredump /home/mikhail/esp/esp-idf/components/esptool_py /home/mikhail/esp/esp-idf/components/fatfs /home/mikhail/esp/esp-idf/components/freertos /home/mikhail/esp/esp-idf/components/hal /home/mikhail/esp/esp-idf/components/heap /home/mikhail/esp/esp-idf/components/http_parser /home/mikhail/esp/esp-idf/components/idf_test /home/mikhail/esp/esp-idf/components/ieee802154 /home/mikhail/esp/esp-idf/components/json /home/mikhail/esp/esp-idf/components/log /home/mikhail/esp/esp-idf/components/lwip /home/mikhail/projects/roadmap/pogoda_espress/main /home/mikhail/esp/esp-idf/components/mbedtls /home/mikhail/esp/esp-idf/components/mqtt /home/mikhail/esp/esp-idf/components/newlib /home/mikhail/esp/esp-idf/components/nvs_flash /home/mikhail/esp/esp-idf/components/openthread /home/mikhail/esp/esp-idf/components/partition_table /home/mikhail/esp/esp-idf/components/protobuf-c /home/mikhail/esp/esp-idf/components/protocomm /home/mikhail/esp/esp-idf/components/pthread /home/mikhail/esp/esp-idf/components/riscv /home/mikhail/esp/esp-idf/components/sdmmc /home/mikhail/esp/esp-idf/components/soc /home/mikhail/esp/esp-idf/components/spi_flash /home/mikhail/esp/esp-idf/components/spiffs /home/mikhail/esp/esp-idf/components/tcp_transport /home/mikhail/esp/esp-idf/components/tinyusb /home/mikhail/esp/esp-idf/components/ulp /home/mikhail/esp/esp-idf/components/unity /home/mikhail/esp/esp-idf/components/usb /home/mikhail/esp/esp-idf/components/vfs /home/mikhail/esp/esp-idf/components/wear_levelling /home/mikhail/esp/esp-idf/components/wifi_provisioning /home/mikhail/esp/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mikhail/projects/roadmap/pogoda_espress/build

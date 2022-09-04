@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/CMakeFiles/bootloader"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/home/mikhail/projects/roadmap/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/mikhail/projects/roadmap/pogoda_espress/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 
