@@ -47,7 +47,7 @@
 
 #define API_YANDEX_HOST "api.weather.yandex.ru"                 /**< Host URL */
 #define API_YANDEX_URL  "https://" API_YANDEX_HOST "/"          /**< Host URL full */
-#define API_YANDEX_PORT "80"                                    /**< TLS port */
+#define API_YANDEX_PORT "443"                                   /**< TLS port */
 #define API_YANDEX_PATH "/v2/informers?lat=59.9386&lon=30.3141" /**< Host path */
 #define API_YANDEX_KEY  "822a9b7c-bfdf-4f43-93b8-ac085bb84c1d"  /**< Yandex API key */
 /**< Yandex API weather GET request */
